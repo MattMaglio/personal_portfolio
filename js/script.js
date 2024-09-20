@@ -41,8 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Simulación de envío exitoso
-        /*alert('Formulario enviado con éxito.\nGracias por contactarte, ' + name + '!');*/
+        alert('Formulario enviado con éxito.\nGracias por contactarte, ' + name + '!');
 
     });
 
