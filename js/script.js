@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
 
     contactForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita el envío predeterminado del formulario
+        event.preventDefault();
 
         // Obtener valores de los campos
         const name = document.getElementById('name').value.trim();
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Simulación de envío exitoso
-        alert('Formulario enviado con éxito.\nGracias por contactarte, ' + name + '!');
+        /*alert('Formulario enviado con éxito.\nGracias por contactarte, ' + name + '!');*/
 
     });
 
