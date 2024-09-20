@@ -1,0 +1,235 @@
+/* Fuente descontinuada
+@font-face {
+    font-family: 'ProtestGuerrilla';
+    src: url('../fonts/ProtestGuerrilla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+@media (max-width: 768px) {
+    .project-img {
+        max-width: 100%;
+    }
+    .logo-img {
+        max-width: 50px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(0, 51, 102, 0.8); /* Azul oscuro semi-transparente */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+html, body {
+    height: 100%; /* Asegura que tanto el HTML como el body ocupen toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'ProtestGuerrilla', Arial, sans-serif;
+    background-image: url('../src/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: block; /* Asegura que el body sea de tipo bloque */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #003366cc;
+    color: #00FFCC;
+    text-align: left;
+    padding: 10px 0;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+h2 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+h4 {
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+button {
+    font-family: 'ProtestGuerrilla', Arial, sans-serif;
+}
+
+p {
+    font-family: 'ProtestGuerrilla', Arial, sans-serif;
+}
+
+.mi-imagen {
+    border-radius:50%;
+    border: 2px solid #00FFCC;
+    width: 150px;
+    height: 150px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project-py-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project-bi-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project-sql-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 75px;
+    height: auto;
+    margin: 0 10px;
+    border: 2px solid #00FFCC;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega una transición suave */
+}
+
+.logo-img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+}
+
+.about-section,
+.proyectos-section,
+.contacto-section,
+.redes-section {
+    margin-top: 50px;
+    background-color: #2c4e6baa;
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+
+.centered-div {
+    width: 95%;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.header-title{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.project-section {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: purple;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    color: #00FFCC;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00FFCC;
+    border-radius: 10px;
+    background-color: #2c4e6b;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #cccccc;
+}
+
+.contact-form button {
+    background-color: #00FFCC;
+    color: #003366;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00bfa5;
+}
