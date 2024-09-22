@@ -19,7 +19,7 @@ logoImages.forEach(img => {
 document.getElementById('py-section').style.display = 'block';
 
 // Selecciona el formulario después de que el DOM ha cargado
-/*
+
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector('.contactForm');
 
@@ -79,5 +79,3 @@ function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
 }
-
-*/
