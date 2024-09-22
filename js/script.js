@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        alert('Formulario enviado con éxito.\nGracias por contactarte, ' + name + '!');
+        /*alert('Formulario enviado con éxito.\nGracias por contactarte, ' + name + '!');*/
 
     });
 
