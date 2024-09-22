@@ -7,79 +7,122 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <header>
-    <!--<h1 class="header-title">MATIAS MAGLIO</h1>*/-->
-    <!---->
     <nav>
-        <ul class="nav-links">
-            <li><a href="#aboutme">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#redes">Redes</a></li>
+        <ul class="nav-links" id="navbar">
+            <li><a href="#aboutme">SOBRE MÍ</a></li>
+            <li><a href="#proyectos">PROYECTOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#redes">REDES</a></li>
         </ul>
     </nav>
 </header>
 <body>
     <div class="container">
+
+        <hr>
+        <h1 id="aboutme">
+            <a href="#navbar">
+                <img src="./src/arrow.png" alt="icono_section" class="section-img">
+            </a>
+            sobre mí
+        </h1>
+        <hr>
+
         <div class="centered-div">
-            <div class="about-section" id="aboutme">
-                <h3> Sobre mi: </h3>
-                <img src="./src/perfil.jpg" alt="Foto de perfil" class="mi-imagen">
-                <p> <br> Mi nombre es Matias Maglio, tengo 29 años y vivo en Buenos Aires, Argentina. <br> <br></p>
-                <h4>Carrera profesional:</h4>
-                <p>
-                    <br>
-                    Cuento con aproximadamente 5 años de experiencia laboral como programador, destacándome en el rol de
-                    Data Architect y Data Analyst. En esta posición, me especializo en la creación, mantenimiento y
-                    optimización de procesos ETL para entornos de DataWarehouse en plataformas como AWS. <br>
-                    Ademas diseño reportes y visualizaciones en Power BI y gestiono los diversos workspaces como sus
-                    caracteristicas dentro de Fabric para ser implementadas tanto dentro de la compañia, en aplicaciones internas,
-                    como en los diversos clientes con los que contamos.<br>
-                    <br>
-                    <br>
-                </p>
-                <h4>Estudios:</h4>
-                <p>
-                    <br>
-                    Actualmente estoy terminando mi formacion como "Tecnico Universitario en Programacion" en la Univeridad Tecnologica Nacional (UTN).<br>
-                    Cuento con diversos cursos realizados de tecnologias como Python, UI/UX y Metodologias agiles y gestion de proyectos.
-                </p>
-            </div>
-            <div class="proyectos-section" id="proyectos">
-                <h3> Skills y Proyectos: </h3>
-                <div>
-                    <img src="./src/py_logo.png" alt="python-logo" class="logo-img" data-section="py-section">
-                    <img src="./src/bi_logo.png" alt="bi-logo" class="logo-img" data-section="bi-section">
-                    <img src="./src/sql_logo.png" alt="sql-logo" class="logo-img" data-section="sql-section">
-                    <img src="./src/c++_logo.png" alt="c-logo" class="logo-img" data-section="c-section">
+                <img src="./src/perfil.jpg" alt="Foto de perfil" class="my-img">
+                <div class="about_me_text">
+                    <p style="display: inline;">Mi nombre es </p>
+                    <p style="display: inline; color: #00FFD4;">Matias Maglio,</p>
+                    <p style="display: inline;">tengo 29 años y vivo en Buenos Aires, Argentina.</p>
                 </div>
-                <div class="py-project project-section" id="py-section">
-                    <h4> Gestor de parametros </h4>
-                    <img src="./src/py_proyecto_1.png" alt="py-logo" class="project-py-img">
-                    <img src="./src/py_proyecto_2.png" alt="py-logo" class="project-py-img">
+                <div class="about-title">
+                    <img src="./src/carrera_icon.png" alt="icono_carrera" class="about-icon-prof">
+                    <h2>Carrera profesional</h2>
+                </div>
+                <div class="about-text">
                     <p>
-                        Utilizando Python y el framework Flet (by Flutter) desarrolle herramientas que facilitan la gestíon de las propiedades los reportes
-                        dentro de los workspaces de Fabric/PowerBiServices dando al usuario una interfaz simple conectada por API a los servicios.
+                        Cuento con aproximadamente 5 años de experiencia laboral como programador, destacándome en el rol de
+                        Data Architect y Data Analyst. En esta posición, me especializo en la creación, mantenimiento y
+                        optimización de procesos ETL para entornos de DataWarehouse en plataformas como AWS.Ademas diseño
+                        reportes y visualizaciones en Power BI y gestiono los diversos workspaces como sus caracteristicas
+                        dentro de Fabric para ser implementadas tanto dentro de la compañia, en aplicaciones internas, como
+                        en los diversos clientes con los que contamos.
                     </p>
                 </div>
-                <div class="bi-project project-section" id="bi-section">
-                    <h4> Reportes y metricas estadisticas </h4>
+                <div class="about-title">
+                    <img src="./src/estudios_icon.png" alt="icono_estudios" class="about-icon-est">
+                    <h2>Estudios</h2>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Actualmente estoy terminando mi formacion como "Tecnico Universitario en Programacion" en la Univeridad Tecnologica
+                        Nacional (UTN).<br>
+                        Cuento con diversos cursos realizados de tecnologias como Python, UI/UX y Metodologias agiles y gestion de proyectos.
+                    </p>
+                </div>
+
+        </div>
+
+        <hr>
+        <h1  id="proyectos">
+            <a href="#navbar">
+                <img src="./src/arrow.png" alt="icono_section" class="section-img">
+            </a>
+            skills y proyectos
+        </h1>
+        <hr>
+
+        <div class="centered-div">
+            <div class="selector-proyectos">
+                <img src="./src/py_logo.png" alt="python-logo" class="logo-img" data-section="py-section">
+                <img src="./src/bi_logo.png" alt="bi-logo" class="logo-img" data-section="bi-section">
+                <img src="./src/sql_logo.png" alt="sql-logo" class="logo-img" data-section="sql-section">
+                <img src="./src/c++_logo.png" alt="c-logo" class="logo-img" data-section="c-section">
+            </div>
+            <div class="py-project project-section" id="py-section">
+                <h2> Gestor de parametros </h2>
+                <div class="img-display-area">
+                    <img src="./src/py_proyecto_1.png" alt="py-logo" class="project-py-img">
+                    <img src="./src/py_proyecto_2.png" alt="py-logo" class="project-py-img">
+                </div>
+                <div class="project-text">
+                    <p>
+                        Utilizando Python y el framework Flet (by Flutter) desarrolle herramientas que facilitan la gestíon de las propiedades los reportes
+                        dentro de los workspaces de PowerBiServices dando al usuario una interfaz simple conectada por API a los servicios.
+                    </p>
+                </div>
+            </div>
+            <div class="bi-project project-section" id="bi-section">
+                <h2> Reportes y metricas estadisticas </h2>
+                <div class="img-display-area">
                     <img src="./src/bi_proyecto.png" alt="bi-logo" class="project-bi-img">
-                    <p> Eh diseñado diversos reportes y metricas para explorar y entender el funcionamiento de los comercios que requieran realizar
+                </div>
+                <div class="project-text">
+                    <p>
+                        Eh diseñado diversos reportes y metricas para explorar y entender el funcionamiento de los comercios que requieran realizar
                         analisis sobre su logica de negocio.
                     </p>
                 </div>
-                <div class="sql-project project-section" id="sql-section">
-                    <h4> Procesos ETL y entornos DW </h4>
+            </div>
+            <div class="sql-project project-section" id="sql-section">
+                <h2> Procesos ETL y entornos DW </h2>
+                <div class="img-display-area">
                     <img src="./src/sql-proyecto.png" alt="sql-logo" class="project-sql-img">
+                </div>
+                <div class="project-text">
                     <p>
                         Todos los dias doy seguimiento a los diversos procesos ETL, generando vistas, tablas y realizando mejoras en entornos de DW
                         en bases de datos en entornos locales y serviodres de provedores como AWS para generar modelos de datos accesibles y comprensibles
                         que puedan nutrir modelos semanticos y usarse en procesos de Buissnes Inteligence.
                     </p>
                 </div>
-                <div class="c-project project-section" id="c-section">
-                    <h4> Juego son SDL2 </h4>
+            </div>
+            <div class="c-project project-section" id="c-section">
+                <h2> Juego son SDL2 </h2>
+                <div class="img-display-area">
                     <img src="./src/c_proyecto.png" alt="c-logo" class="project-img">
+                </div>
+                <div class="project-text">
                     <p>
                         En el marco de un proyecto academico, por medio de la libreria SDL2 cree un juego de defensa totalemtne funcional.
                         El mismo cuneta con todas las caracteristicas operativas de un juego, pudiendo crear un perfil, guardar puntajes y realziar
@@ -87,9 +130,21 @@
                     </p>
                 </div>
             </div>
-            <div class="contacto-section" id="contacto">
-                <h3>Contacto:</h3>
+        </div>
+
+        <hr>
+        <h1 id="contacto">
+            <a href="#navbar">
+                <img src="./src/arrow.png" alt="icono_section" class="section-img">
+            </a>
+            Contacto
+        </h1>
+        <hr>
+
+        <div class="centered-div">
+            <div>
                 <form action="https://formsubmit.co/matiasadrian.maglio@gmail.com" method="POST" class="contact-form">
+
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" placeholder="Tu nombre" required>
 
@@ -100,31 +155,36 @@
                     <input type="text" id="subject" name="subject" placeholder="Asunto" required>
 
                     <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
 
                     <button type="submit">Enviar</button>
-               </form>
-            </div>
-            <div class="redes-section" id="redes">
-                <h3>Redes:</h3>
-                <p>Sígueme en mis redes sociales:</p>
-                <ul class="social-links">
-                    <a href="https://www.linkedin.com/in/matias-maglio/">
-                        <img src="./src/lk_logo.png" alt="linkedin_logo" class="logo-img">
-                    </a>
-                    <a href="https://github.com/MattMaglio">
-                        <img src="./src/gh_w_logo.png" alt="github_logo" class="logo-img">
-                    </a>
-                </ul>
-            </div>
-            <div>
-                <p>
-                    <br>
-                    <br>
-                    <br>
-                </p>
+
+                </form>
             </div>
         </div>
+
+        <hr>
+        <h1 id="redes">
+            <a href="#navbar">
+                <img src="./src/arrow.png" alt="icono_section" class="section-img">
+            </a>
+            Redes
+        </h1>
+        <hr>
+
+        <div class="centered-div">
+            <ul class="social-links">
+                <a href="https://www.linkedin.com/in/matias-maglio/">
+                    <img src="./src/lk_icon.png" alt="linkedin_logo" class="logo-img">
+                </a>
+                <a href="https://github.com/MattMaglio">
+                    <img src="./src/github_icon.png" alt="github_logo" class="logo-img">
+                </a>
+            </ul>
+        </div>
+
+        <hr>
+
     </div>
     <script src="./js/script.js"></script>
 </body>
